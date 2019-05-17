@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9B71C1C"
+
+    tools:context="com.example.meefaisal.smartprofile.AddProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello There,"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:id="@+id/hello"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To SProfile"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/hello"
+        android:textSize="25dp"
+        android:id="@+id/wel"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_name"
+        android:layout_below="@id/wel"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:textColorHint="@android:color/white"
+            android:ems="10"
+            android:hint="Full name"
+            android:inputType="text"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_name"
+        android:id="@+id/input_email"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+             />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_email"
+        android:id="@+id/input_gender"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_gender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Place"
+            android:inputType="text"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_gender"
+        android:id="@+id/input_post"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_post_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Post Code"
+            android:inputType="number"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_post"
+        android:id="@+id/input_number"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/text_loc"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+      android:layout_below="@id/text_loc"
+        android:layout_marginTop="10dp"
+        android:id="@+id/location"
+        android:textColor="#fff"
+        android:background="#b61c1c"
+        android:drawableLeft="@drawable/location"
+        android:text="Location"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/submit"
+        android:layout_below="@id/location"
+        android:layout_marginTop="30dp"
+        android:background="#b61c1c"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="Create SProfile"/>
+
+</RelativeLayout>
+</ScrollView>

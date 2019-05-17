@@ -1,0 +1,204 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9B71C1C"
+    tools:context="com.example.meefaisal.smartprofile.UpdateProfileFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Your Profile"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:id="@+id/txt_update"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_update"
+        android:id="@+id/input_number_update"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_number_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Update By Phone Number"
+            android:inputType="number"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_name_update"
+        android:layout_below="@id/input_number_update"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editText_name_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:textColorHint="@android:color/white"
+            android:ems="10"
+            android:hint="Update Full name"
+            android:inputType="text"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_name_update"
+        android:id="@+id/input_email_update"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_email_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Update Email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_email_update"
+        android:id="@+id/input_gender_update"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_gender_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Update Place"
+            android:inputType="text"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_gender_update"
+        android:id="@+id/input_post_update"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_post_code_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Update Post Code"
+            android:inputType="number"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_post_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/text_loc_update"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/text_loc_update"
+        android:layout_marginTop="10dp"
+        android:id="@+id/location_update"
+        android:textColor="#fff"
+        android:background="#b61c1c"
+        android:drawableLeft="@drawable/location"
+        android:text="Update Location"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/submit_update"
+        android:layout_below="@id/location_update"
+        android:layout_marginTop="30dp"
+        android:background="#b61c1c"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="UPdate SProfile"/>
+
+</RelativeLayout>
+    </ScrollView>
+
+

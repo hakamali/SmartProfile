@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9B71C1C"
+    android:layout_margin="5dp"
+    tools:context="com.example.meefaisal.smartprofile.SleepHoursFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Sleep Hours in 24h Method"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/hello"
+        android:textSize="20dp"
+        android:id="@+id/wel"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_first_hour"
+        android:layout_below="@id/wel"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editText_start_hour"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:textColorHint="@android:color/white"
+            android:ems="10"
+            android:hint="Update Starting Hour"
+            android:inputType="number"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_first_min"
+        android:layout_below="@id/input_first_hour"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_start_min"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:textColorHint="@android:color/white"
+            android:ems="10"
+            android:hint="Update Starting Mint"
+            android:inputType="number"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_first_min"
+        android:id="@+id/input_second_hour"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_end_hour"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Update Ending Hour"
+            android:inputType="number"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_second_hour"
+        android:id="@+id/input_second_min"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText_end_min"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Update Ending Mint"
+            android:inputType="number"
+            android:layout_below="@id/editText_name"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/submit_sleep"
+        android:layout_below="@id/input_second_min"
+        android:layout_marginTop="30dp"
+        android:background="#b61c1c"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="Update Time"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/silent"
+        android:src="@drawable/silence"
+        android:layout_below="@id/submit_sleep"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vibration"
+        android:src="@drawable/vibrant"
+        android:layout_toEndOf="@id/silent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/submit_sleep"
+        android:layout_toRightOf="@id/silent_add" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ring"
+        android:src="@drawable/bell"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/vibration"
+        android:layout_below="@id/submit_sleep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/vibration" />
+
+</RelativeLayout>

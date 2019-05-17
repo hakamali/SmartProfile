@@ -1,0 +1,65 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#D9B71C1C"
+    tools:context="com.example.meefaisal.smartprofile.DeleteProfileFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_post"
+        android:id="@+id/input_number_del"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/editText_number_del"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="0dp"
+            android:background="#20ffffff"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:maxLength="32"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_below="@id/input_number_del"
+        android:layout_marginTop="30dp"
+        android:id="@+id/del_btn"
+        android:textColor="#fff"
+        android:background="#b61c1c"
+        android:text="Click TO Delete"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/del_btn"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/text_del"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</ScrollView>

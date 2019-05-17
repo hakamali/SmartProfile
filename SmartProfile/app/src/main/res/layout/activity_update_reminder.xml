@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="#D9B71C1C"
+        android:layout_height="match_parent"
+        tools:context="com.example.meefaisal.smartprofile.UpdateReminderActivity">
+
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/wel"
+            android:text="Update"
+            android:textSize="30dp"
+            android:textColor="#ffffff"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_name_rem_update"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/wel"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editText_name_rem_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="0dp"
+                android:background="#20ffffff"
+                android:textColorHint="@android:color/white"
+                android:ems="10"
+                android:hint="Update Name of reminder"
+                android:inputType="textEmailAddress"
+                android:maxLength="32"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_date_rem_update"
+            android:layout_below="@id/input_name_rem_update"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/editText_date_rem_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:focusable="false"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="0dp"
+                android:background="#20ffffff"
+                android:textColorHint="@android:color/white"
+                android:ems="10"
+                android:hint="Pick New date"
+                android:inputType="textEmailAddress"
+                android:maxLength="32"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_time_rem_update"
+            android:layout_below="@id/input_date_rem_update"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/editText_time_rem_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:focusable="false"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="0dp"
+                android:background="#20ffffff"
+                android:textColorHint="@android:color/white"
+                android:ems="10"
+                android:hint="Pick New Time"
+                android:inputType="textEmailAddress"
+                android:maxLength="32"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_time_rem_update"
+            android:id="@+id/input_loc_rem_update"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/editText_loc_rem_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="0dp"
+                android:background="#20ffffff"
+                android:ems="10"
+                android:hint="Enter New Address/Location"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/editText_name_rem_update"
+                android:maxLength="32"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_loc_rem_update"
+            android:id="@+id/input_message_update"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/editText_message_update"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="0dp"
+                android:background="#20ffffff"
+
+                android:gravity="top|left"
+                android:hint="Modify Message"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:layout_below="@id/editText_name_rem_update"
+                android:maxLength="260"
+                android:padding="5dp"
+                android:lines="5"
+                android:singleLine="false"
+                android:textColor="#ffffff"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:id="@+id/submit_add_rem_update"
+            android:layout_below="@id/input_message_update"
+            android:layout_marginTop="30dp"
+            android:background="#b61c1c"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="Update Reminder"/>
+
+    </RelativeLayout>
+</ScrollView>

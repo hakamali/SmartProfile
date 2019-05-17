@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Features"
+    >
+    <menu>
+    <group android:checkableBehavior="single">
+
+    <item
+        android:title="Profiles"
+        android:icon="@drawable/usernav"
+        android:id="@+id/id_profile">
+        </item>
+        <item
+            android:title="Update Profile"
+            android:icon="@drawable/editpro"
+            android:id="@+id/id_update"
+            ></item>
+        <item
+            android:title="Delete Profile"
+            android:icon="@drawable/delpro"
+            android:id="@+id/id_del"
+            ></item>
+  <!--<item-->
+        <!--android:title="Call Block"-->
+      <!--android:icon="@drawable/blockcall"-->
+        <!--android:id="@+id/id_block"-->
+        <!--&gt;</item>-->
+        <item
+            android:title="Maintain Call Block"
+            android:id="@+id/id_maintain_call_block"
+            android:icon="@drawable/manageblockcall"
+            ></item>
+        <item
+            android:title="Add Reminder"
+            android:icon="@drawable/reminder"
+            android:id="@+id/id_reminder"
+            ></item>
+        <item
+            android:title="View Reminder"
+            android:icon="@drawable/remindermanage"
+            android:id="@+id/id_manage_reminder"
+            ></item>
+        <item
+            android:title="Update Reminder"
+            android:icon="@drawable/updatereminder"
+            android:id="@+id/id_update_reminder"
+            ></item>
+        <item
+            android:title="Delete Reminder"
+            android:icon="@drawable/delreminder"
+            android:id="@+id/id_delete_reminder"
+            ></item>
+
+        <item
+        android:title="Add Sleeping Hours"
+        android:icon="@drawable/sleep"
+        android:id="@+id/id_sleep_hour_add"
+        ></item>
+        <item
+            android:title="Update Sleeping Hours"
+            android:icon="@drawable/sleep"
+            android:id="@+id/id_sleep_hour"
+            ></item>
+        <item
+        android:title="Clear Log"
+        android:icon="@drawable/clearnav"
+        android:id="@+id/id_clear_log"
+        ></item>
+        <item
+            android:title="Current Location"
+            android:icon="@drawable/currentlocation"
+            android:id="@+id/id_current_loc"
+            ></item>
+
+</group>
+    </menu>
+</item>
+
+
+    <item android:title="About us">
+        <menu>
+            <item
+                android:title="About"
+                android:id="@+id/id_about"
+                android:icon="@drawable/about"
+
+                ></item>
+        </menu>
+    </item>
+</menu>
